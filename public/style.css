@@ -1,0 +1,36 @@
+
+
+.main-index{
+    padding: 1.2rem; 
+ }
+ 
+ #h2{
+     margin-top: 0.5rem;
+ }
+ 
+ 
+ .div-select-mes{
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     padding: 0.6rem;
+ }
+ 
+ .div-volver{
+     cursor: pointer;
+     margin: 0;
+ }
+
+ .container-fluid p {
+    margin: 0;
+ }
+ 
+ /* .div-select{
+     flex-grow: 1;
+ }
+ 
+ .div-h2{
+     flex-grow: 6;
+ }*/
+ 
+ 
