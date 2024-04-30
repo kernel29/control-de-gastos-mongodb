@@ -4,9 +4,10 @@ const mongoose = require("mongoose");
 const path = require("path");
 const routerGastos = require("./routes/gasto.routes.js");
 const routerGastosPorMes = require("./routes/gastosPorMes.routes.js");
-const PORT = require("./config.js");
 
 app.use(express.json());
+
+const PORT = process.env.PORT;
 
 app.use(express.static(path.join(__dirname, "public")));
 app.listen(PORT, () => {
@@ -18,9 +19,9 @@ app.use("/gastosPorMes", routerGastosPorMes);
 
 app.get("/", (req, resp) => {});
 
-const URI =
-  "mongodb+srv://diwen2:EwuYnql3F1DVyMex@backenddb.qcsqczd.mongodb.net/misGastos";
 
+
+const URI = process.env.DATABASE_URL
 mongoose
   .connect(URI)
   .then(() => {

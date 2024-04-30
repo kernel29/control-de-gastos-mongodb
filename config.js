@@ -1,4 +1,4 @@
-const PORT  = 5500; 
+const PORT  = 3000; 
 
 
 module.exports = PORT

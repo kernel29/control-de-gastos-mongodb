@@ -14,7 +14,7 @@ window.addEventListener("pageshow", function (event) {
   }
 });
 
-const URL_API = "http://localhost:3000/gastos";
+const URL_API = "control-de-gastos-mongodb-production.up.railway.app/gastos";
 
 const categorias = [
   "alimentacion",

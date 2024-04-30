@@ -35,7 +35,7 @@ btnGenerar.addEventListener("click", () => {
   const objMes = {mes: Number(document.querySelector(".div-select").value)};
   sessionStorage.setItem('mes', objMes.mes);
 
-  const URL_API = "http://localhost:3000/gastosPorMes";
+  const URL_API = "control-de-gastos-mongodb-production.up.railway.app/gastosPorMes";
 
   getGastos(URL_API, objMes);
   

@@ -16,7 +16,7 @@ if (dia < 10) dia = "0" + dia;
 if (mes < 10) mes = "0" + mes;
 document.getElementById("fecha").value = ano + "-" + mes + "-" + dia;
 
-const url_api = "http://localhost:3000/gastos";
+const url_api = "control-de-gastos-mongodb-production.up.railway.app/gastos";
 
 document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
