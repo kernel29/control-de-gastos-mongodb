@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const path = require("path");
 const routerGastos = require("./routes/gasto.routes.js");
 const routerGastosPorMes = require("./routes/gastosPorMes.routes.js");
+const dotEnv = require('dotenv');
+dotEnv.config()
 
 app.use(express.json());
 
