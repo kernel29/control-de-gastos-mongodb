@@ -1,6 +1,9 @@
+
+import { HOST_API } from "./config.js";
+
 const gastosFiltrados = JSON.parse(localStorage.getItem("gastos-filtrados"));
 const categoria = localStorage.getItem("categoria");
-const URL_API = "control-de-gastos-mongodb-production.up.railway.app/gastos/";
+const URL_API = `${HOST_API}/gastos/`;
 
 renderizarCategoria(gastosFiltrados, categoria);
 

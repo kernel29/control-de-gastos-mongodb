@@ -1,3 +1,7 @@
+
+
+import { HOST_API } from "./config.js";
+
 class Gasto {
   constructor(descripcion, precio, moneda, categoria, fecha = new Date()) {
     this.descripcion = descripcion;
@@ -16,7 +20,7 @@ if (dia < 10) dia = "0" + dia;
 if (mes < 10) mes = "0" + mes;
 document.getElementById("fecha").value = ano + "-" + mes + "-" + dia;
 
-const url_api = "control-de-gastos-mongodb-production.up.railway.app/gastos";
+const url_api = `${HOST_API}/gastos`;
 
 document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();

@@ -1,4 +1,5 @@
 
+import { HOST_API } from "./config.js";
 
 
 // evento para que la pagina se recargue cuando se clickea el boton "atras" del navegador
@@ -14,7 +15,7 @@ window.addEventListener("pageshow", function (event) {
   }
 });
 
-const URL_API = "control-de-gastos-mongodb-production.up.railway.app/gastos";
+const URL_API = `${HOST_API}/gastos`;
 
 const categorias = [
   "alimentacion",
