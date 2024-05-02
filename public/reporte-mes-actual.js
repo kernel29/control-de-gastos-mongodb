@@ -16,6 +16,7 @@ window.addEventListener("pageshow", function (event) {
 });
 
 const URL_API = `${HOST_API}/gastos`;
+console.log(URL_API)
 
 const categorias = [
   "alimentacion",
