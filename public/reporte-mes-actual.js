@@ -31,12 +31,13 @@ const categorias = [
   "otros",
 ];
 
-getGastos(URL_API);
+getGastos(URL_API)
+.then(response => renderizarTotales(response));
 
 async function getGastos(URL_API) {
   const response = await fetch(URL_API);
   const result = await response.json();
-  renderizarTotales(result);
+  return result
 }
 
 function totalCategoria(array, categoria) {
