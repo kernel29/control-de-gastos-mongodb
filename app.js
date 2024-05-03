@@ -29,6 +29,6 @@ mongoose
   .then(() => {
     console.log("conectado a mongodb");
   })
-  .catch(() => {
-    console.log("connection failed");
+  .catch((error) => {
+    console.log(error,"connection failed", URI);
   });

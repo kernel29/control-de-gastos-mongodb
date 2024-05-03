@@ -27,6 +27,7 @@ const getGastos = async (req, resp)=>{
                 $eq: [{ $month: '$fecha' }, mesBuscado] // 1 representa enero
             }
         });
+        console.log('contenido de gastos', gastos)
         resp.status(200).json(gastos)
     } catch (error) {
         resp.status(500).json({message: error.message})
