@@ -23,7 +23,7 @@ app.get("/", (req, resp) => {});
 
 
 
-const URI = process.env.DATABASE_URL
+const URI = process.env.MONGO_URL
 mongoose
   .connect(URI)
   .then(() => {
