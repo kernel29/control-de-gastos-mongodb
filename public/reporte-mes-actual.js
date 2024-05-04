@@ -39,7 +39,7 @@ getGastos(URL_API)
 
 async function getGastos(URL_API) {
   const response = await fetch(URL_API);
-  const result = await response.json();
+  const result = await JSON.parse(response);
   return result
 }
 
