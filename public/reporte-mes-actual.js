@@ -4,7 +4,6 @@ import { HOST_API } from "./config.js";
 
 // evento para que la pagina se recargue cuando se clickea el boton "atras" del navegador
 window.addEventListener("pageshow", function (event) {
-  console.log(URL_API)
   // Verifica su se elimino algun dato
   if (sessionStorage.getItem("datoBorrado")) {
     // si se elimino un dato se recarga la pagina
@@ -31,6 +30,9 @@ const categorias = [
   "titi",
   "otros",
 ];
+
+console.log(URL_API)
+
 
 getGastos(URL_API)
 .then(response => renderizarTotales(response));
