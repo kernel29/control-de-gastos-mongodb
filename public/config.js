@@ -1,3 +1,5 @@
-export const HOST_API = 'control-de-gastos-mongodb-production.up.railway.app'
+export const HOST_API = 'http://localhost:3000';
+
+
 
 
