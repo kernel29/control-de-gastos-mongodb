@@ -31,15 +31,16 @@ const categorias = [
   "otros",
 ];
 
-console.log(URL_API)
+  console.log(URL_API)
 
 
 getGastos(URL_API)
 .then(response => renderizarTotales(response));
 
 async function getGastos(URL_API) {
+  console.log(URL_API)
   const response = await fetch(URL_API);
-  const result = await JSON.parse(response);
+  const result = await response.json();
   return result
 }
 
